@@ -1,0 +1,52 @@
+/////////////EXERCICIO 3/////////////
+
+programa {
+
+  inclua biblioteca Matematica --> M
+
+	funcao inicio() {
+
+		//Variáveis//
+		
+		real D, R, C
+
+		//Algoritmo//
+		
+		escreva("Digite a cotação atual: ")
+		leia(C)
+		
+		escreva("Digite a quantidade de dolares: ")
+		leia(D)
+		
+		R = (C * D)
+
+    		
+		escreva("Valor em Reais: ", M.arredondar(R,2)) 
+	}
+}
+
+
+/////////////EXERCICIO 4/////////////
+
+programa {
+  
+  inclua biblioteca Matematica --> M
+
+	funcao inicio() {
+
+		//Variáveis//
+		
+		real precoCusto, precoVenda, percentualAcrescimo
+
+    //Algoritmo//
+
+    escreva("Digite o preço de custo do produto: ")
+    leia(precoCusto)
+    escreva("Digite o percentual de acrescimo para este produto: ")
+    leia(percentualAcrescimo)
+
+    precoVenda = (precoCusto + (precoCusto * percentualAcrescimo))
+
+    escreva("O preço de venda será de: R$", M.arredondar(precoVenda, 2), "\n")
+	}
+}
